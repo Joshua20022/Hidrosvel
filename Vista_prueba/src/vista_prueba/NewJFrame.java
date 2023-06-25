@@ -20,54 +20,54 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        btnGuardar = new javax.swing.JButton();
-        btnNuevo = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        TablaVista = new javax.swing.JTable();
+        btnGuardarVista = new javax.swing.JButton();
+        btnNuevoVista = new javax.swing.JButton();
+        btnPdf = new javax.swing.JButton();
+        btnExcel = new javax.swing.JButton();
+        btnEjecutar = new javax.swing.JButton();
+        txtSubtotal = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtIgv = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txtTotal = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
+        txtFechaVista = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtNPresupuesto = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtTiempoEntrega = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        txtOferta = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtRef = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        txtEspecialista = new javax.swing.JComboBox<>();
-        jTextField11 = new javax.swing.JTextField();
-        txtCliente = new javax.swing.JComboBox<>();
+        txtEspecialistaVista = new javax.swing.JComboBox<>();
+        txtPago = new javax.swing.JTextField();
+        txtClienteVista = new javax.swing.JComboBox<>();
         btnAtencion = new javax.swing.JButton();
         btnClientes = new javax.swing.JButton();
         btnEspecialista = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        txtAtencionVista = new javax.swing.JComboBox<>();
+        btnBuscarVista = new javax.swing.JButton();
+        txtBuscadorVista = new javax.swing.JTextField();
+        btnInsertarFila = new javax.swing.JButton();
+        btnEliminarFila = new javax.swing.JButton();
+        btnIngresarServicio = new javax.swing.JButton();
 
         jButton2.setText("jButton2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        TablaVista.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -83,55 +83,55 @@ public class NewJFrame extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(700);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setPreferredWidth(125);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
-            jTable1.getColumnModel().getColumn(4).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setPreferredWidth(195);
+        jScrollPane1.setViewportView(TablaVista);
+        if (TablaVista.getColumnModel().getColumnCount() > 0) {
+            TablaVista.getColumnModel().getColumn(0).setResizable(false);
+            TablaVista.getColumnModel().getColumn(0).setPreferredWidth(100);
+            TablaVista.getColumnModel().getColumn(1).setResizable(false);
+            TablaVista.getColumnModel().getColumn(1).setPreferredWidth(700);
+            TablaVista.getColumnModel().getColumn(2).setResizable(false);
+            TablaVista.getColumnModel().getColumn(2).setPreferredWidth(125);
+            TablaVista.getColumnModel().getColumn(3).setResizable(false);
+            TablaVista.getColumnModel().getColumn(3).setPreferredWidth(100);
+            TablaVista.getColumnModel().getColumn(4).setResizable(false);
+            TablaVista.getColumnModel().getColumn(4).setPreferredWidth(195);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 429, 964, 250));
 
-        btnGuardar.setText("GUARDAR");
-        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarVista.setText("GUARDAR");
+        btnGuardarVista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarActionPerformed(evt);
+                btnGuardarVistaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 693, 151, -1));
+        getContentPane().add(btnGuardarVista, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 693, 151, -1));
 
-        btnNuevo.setText("NUEVO");
-        getContentPane().add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 723, 151, -1));
+        btnNuevoVista.setText("NUEVO");
+        getContentPane().add(btnNuevoVista, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 723, 151, -1));
 
-        jButton3.setText("PDF");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 693, 151, -1));
+        btnPdf.setText("PDF");
+        getContentPane().add(btnPdf, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 693, 151, -1));
 
-        jButton4.setText("EXCEL");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 723, 151, -1));
+        btnExcel.setText("EXCEL");
+        getContentPane().add(btnExcel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 723, 151, -1));
 
-        jButton5.setText("EJECUTAR");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 693, 151, 50));
+        btnEjecutar.setText("EJECUTAR");
+        getContentPane().add(btnEjecutar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 693, 151, 50));
 
-        jTextField2.setEnabled(false);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtSubtotal.setEnabled(false);
+        txtSubtotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtSubtotalActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 680, 150, -1));
+        getContentPane().add(txtSubtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 680, 150, -1));
 
         jLabel11.setText("SUBTOTAL");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 685, -1, -1));
 
-        jTextField4.setEnabled(false);
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 710, 150, -1));
+        txtIgv.setEnabled(false);
+        getContentPane().add(txtIgv, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 710, 150, -1));
 
         jLabel12.setText("IGV 18%");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 715, -1, -1));
@@ -139,8 +139,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel13.setText("TOTAL");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 745, -1, -1));
 
-        jTextField10.setEnabled(false);
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 740, 150, -1));
+        txtTotal.setEnabled(false);
+        getContentPane().add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 740, 150, -1));
 
         jPanel1.setBackground(new java.awt.Color(16, 152, 204));
 
@@ -162,10 +162,10 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel9.setText("REF:");
 
-        txtEspecialista.setEditable(true);
+        txtEspecialistaVista.setEditable(true);
 
-        txtCliente.setEditable(true);
-        txtCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
+        txtClienteVista.setEditable(true);
+        txtClienteVista.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
         btnAtencion.setText("Tabla Atención");
 
@@ -175,10 +175,10 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Imagen.png"))); // NOI18N
 
-        jComboBox1.setEditable(true);
+        txtAtencionVista.setEditable(true);
 
-        jButton1.setBackground(new java.awt.Color(16, 152, 204));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Lupa.png"))); // NOI18N
+        btnBuscarVista.setBackground(new java.awt.Color(16, 152, 204));
+        btnBuscarVista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Lupa.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -205,9 +205,9 @@ public class NewJFrame extends javax.swing.JFrame {
                                             .addComponent(jLabel5))
                                         .addGap(18, 18, 18)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField5)
-                                            .addComponent(jComboBox1, 0, 272, Short.MAX_VALUE))))
+                                            .addComponent(txtFechaVista, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtNPresupuesto)
+                                            .addComponent(txtAtencionVista, 0, 272, Short.MAX_VALUE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -215,9 +215,9 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGap(98, 98, 98))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(jButton1)
+                        .addComponent(btnBuscarVista)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtBuscadorVista, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -230,16 +230,16 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtEspecialista, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtEspecialistaVista, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jTextField7)
+                                .addComponent(txtOferta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtCliente, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField11)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtTiempoEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtClienteVista, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtPago)
+                            .addComponent(txtRef, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(26, 26, 26))
         );
         jPanel1Layout.setVerticalGroup(
@@ -252,21 +252,21 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtClienteVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(txtEspecialista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtEspecialistaVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtOferta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtTiempoEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtPago, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -283,74 +283,74 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGap(51, 51, 51)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel8)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtNPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel3)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtAtencionVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel5)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtFechaVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnBuscarVista, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(txtBuscadorVista, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel9)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtRef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(38, 38, 38))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 390));
 
-        jButton6.setText("INSERTAR FILA");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnInsertarFila.setText("INSERTAR FILA");
+        btnInsertarFila.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnInsertarFilaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 398, 140, 25));
+        getContentPane().add(btnInsertarFila, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 398, 140, 25));
 
-        jButton7.setText("ELIMINAR FILA");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminarFila.setText("ELIMINAR FILA");
+        btnEliminarFila.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnEliminarFilaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 398, 140, 25));
+        getContentPane().add(btnEliminarFila, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 398, 140, 25));
 
-        jButton8.setText("INGRESAR SERVICIO");
-        jButton8.setPreferredSize(new java.awt.Dimension(135, 22));
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 398, 172, 25));
+        btnIngresarServicio.setText("INGRESAR SERVICIO");
+        btnIngresarServicio.setPreferredSize(new java.awt.Dimension(135, 22));
+        getContentPane().add(btnIngresarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 398, 172, 25));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+    private void btnGuardarVistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarVistaActionPerformed
         
-    }//GEN-LAST:event_btnGuardarActionPerformed
+    }//GEN-LAST:event_btnGuardarVistaActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtSubtotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSubtotalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtSubtotalActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnInsertarFilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarFilaActionPerformed
         count++;
         String numero = String.valueOf(count);
         
-        DefaultTableModel miTableModel = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel miTableModel = (DefaultTableModel) TablaVista.getModel();
         Object nuevaFila[]= {numero,"","",""};
         miTableModel.addRow(nuevaFila);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnInsertarFilaActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        DefaultTableModel miTableModel = (DefaultTableModel) jTable1.getModel();
-        int indFil = jTable1.getSelectedRow();
+    private void btnEliminarFilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarFilaActionPerformed
+        DefaultTableModel miTableModel = (DefaultTableModel) TablaVista.getModel();
+        int indFil = TablaVista.getSelectedRow();
         if (indFil >= 0)
             miTableModel.removeRow(indFil);
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnEliminarFilaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -388,20 +388,20 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TablaVista;
     private javax.swing.JButton btnAtencion;
+    private javax.swing.JButton btnBuscarVista;
     private javax.swing.JButton btnClientes;
+    private javax.swing.JButton btnEjecutar;
+    private javax.swing.JButton btnEliminarFila;
     private javax.swing.JButton btnEspecialista;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnNuevo;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnExcel;
+    private javax.swing.JButton btnGuardarVista;
+    private javax.swing.JButton btnIngresarServicio;
+    private javax.swing.JButton btnInsertarFila;
+    private javax.swing.JButton btnNuevoVista;
+    private javax.swing.JButton btnPdf;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -418,18 +418,18 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JComboBox<String> txtCliente;
-    private javax.swing.JComboBox<String> txtEspecialista;
+    private javax.swing.JComboBox<String> txtAtencionVista;
+    private javax.swing.JTextField txtBuscadorVista;
+    private javax.swing.JComboBox<String> txtClienteVista;
+    private javax.swing.JComboBox<String> txtEspecialistaVista;
+    private javax.swing.JTextField txtFechaVista;
+    private javax.swing.JTextField txtIgv;
+    private javax.swing.JTextField txtNPresupuesto;
+    private javax.swing.JTextField txtOferta;
+    private javax.swing.JTextField txtPago;
+    private javax.swing.JTextField txtRef;
+    private javax.swing.JTextField txtSubtotal;
+    private javax.swing.JTextField txtTiempoEntrega;
+    private javax.swing.JTextField txtTotal;
     // End of variables declaration//GEN-END:variables
 }
