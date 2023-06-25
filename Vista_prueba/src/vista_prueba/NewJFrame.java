@@ -166,6 +166,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
         txtClienteVista.setEditable(true);
         txtClienteVista.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
+        txtClienteVista.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtClienteVistaMouseClicked(evt);
+            }
+        });
 
         btnAtencion.setText("Tabla Atención");
 
@@ -351,6 +356,10 @@ public class NewJFrame extends javax.swing.JFrame {
         if (indFil >= 0)
             miTableModel.removeRow(indFil);
     }//GEN-LAST:event_btnEliminarFilaActionPerformed
+
+    private void txtClienteVistaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtClienteVistaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtClienteVistaMouseClicked
 
     /**
      * @param args the command line arguments
