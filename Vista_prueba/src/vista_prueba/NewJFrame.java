@@ -2,16 +2,14 @@ package vista_prueba;
 
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author PAREDES
- */
 public class NewJFrame extends javax.swing.JFrame {
-
+    
     DefaultTableModel modelo = new DefaultTableModel();
     private int count = 0;
     public NewJFrame() {
+     
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
     @SuppressWarnings("unchecked")
@@ -33,7 +31,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         txtTotal = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        txtFechaVista = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         txtNPresupuesto = new javax.swing.JTextField();
@@ -58,6 +55,7 @@ public class NewJFrame extends javax.swing.JFrame {
         txtAtencionVista = new javax.swing.JComboBox<>();
         btnBuscarVista = new javax.swing.JButton();
         txtBuscadorVista = new javax.swing.JTextField();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         btnInsertarFila = new javax.swing.JButton();
         btnEliminarFila = new javax.swing.JButton();
         btnIngresarServicio = new javax.swing.JButton();
@@ -210,9 +208,9 @@ public class NewJFrame extends javax.swing.JFrame {
                                             .addComponent(jLabel5))
                                         .addGap(18, 18, 18)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtFechaVista, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtNPresupuesto)
-                                            .addComponent(txtAtencionVista, 0, 272, Short.MAX_VALUE))))
+                                            .addComponent(txtAtencionVista, 0, 272, Short.MAX_VALUE)
+                                            .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -294,9 +292,9 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel3)
                                     .addComponent(txtAtencionVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
-                                    .addComponent(txtFechaVista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -411,6 +409,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnNuevoVista;
     private javax.swing.JButton btnPdf;
     private javax.swing.JButton jButton2;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -431,7 +430,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtBuscadorVista;
     private javax.swing.JComboBox<String> txtClienteVista;
     private javax.swing.JComboBox<String> txtEspecialistaVista;
-    private javax.swing.JTextField txtFechaVista;
     private javax.swing.JTextField txtIgv;
     private javax.swing.JTextField txtNPresupuesto;
     private javax.swing.JTextField txtOferta;

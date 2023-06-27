@@ -246,9 +246,9 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txtFechaVista" alignment="0" min="-2" pref="192" max="-2" attributes="0"/>
                                               <Component id="txtNPresupuesto" max="32767" attributes="0"/>
                                               <Component id="txtAtencionVista" alignment="0" pref="272" max="32767" attributes="0"/>
+                                              <Component id="jDateChooser1" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -261,7 +261,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="btnBuscarVista" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -354,9 +354,9 @@
                                       <Component id="txtAtencionVista" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtFechaVista" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -379,8 +379,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="txtFechaVista">
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -509,6 +507,8 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtBuscadorVista">
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
         </Component>
       </SubComponents>
     </Container>
