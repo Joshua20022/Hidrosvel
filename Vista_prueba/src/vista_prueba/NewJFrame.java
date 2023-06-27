@@ -7,9 +7,11 @@ import javax.swing.table.DefaultTableModel;
  * @author PAREDES
  */
 public class NewJFrame extends javax.swing.JFrame {
-
-    DefaultTableModel modelo = new DefaultTableModel();
+    
     private int count = 0;
+    
+    CRUDEspecialista EspecialistaForm = new CRUDEspecialista();
+    
     public NewJFrame() {
         initComponents();
     }
@@ -108,6 +110,11 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 693, 151, -1));
 
         btnNuevo.setText("NUEVO");
+        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 723, 151, -1));
 
         jButton3.setText("PDF");
@@ -172,6 +179,11 @@ public class NewJFrame extends javax.swing.JFrame {
         btnClientes.setText("Tabla Clientes");
 
         btnEspecialista.setText("Tabla Especialistas");
+        btnEspecialista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEspecialistaActionPerformed(evt);
+            }
+        });
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Imagen.png"))); // NOI18N
 
@@ -351,6 +363,14 @@ public class NewJFrame extends javax.swing.JFrame {
         if (indFil >= 0)
             miTableModel.removeRow(indFil);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevoActionPerformed
+
+    private void btnEspecialistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEspecialistaActionPerformed
+        EspecialistaForm.setVisible(true);
+    }//GEN-LAST:event_btnEspecialistaActionPerformed
 
     /**
      * @param args the command line arguments
