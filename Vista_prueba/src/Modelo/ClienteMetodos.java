@@ -103,13 +103,13 @@ public class ClienteMetodos {
        }
    }
    
-   public Cliente Buscarcliente(int ruc){
+   public Cliente Buscarcliente(String buscar){
        Cliente cl = new Cliente();
-       String sql = "SELECT * FROM cliente WHERE ruc = ?";
+       String sql = "SELECT * FROM cliente WHERE nombre LIKE '%"+buscar+"%'";
        try {
            con = cn.getConnection();
            ps = con.prepareStatement(sql);
-           ps.setInt(1, ruc);
+           ps.setString(2, buscar);
            rs = ps.executeQuery();
            if (rs.next()) {
                cl.setId(rs.getInt("id"));
