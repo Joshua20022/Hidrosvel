@@ -1,5 +1,6 @@
 package vista_prueba;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class NewJFrame extends javax.swing.JFrame {
@@ -326,6 +327,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
         btnIngresarServicio.setText("INGRESAR SERVICIO");
         btnIngresarServicio.setPreferredSize(new java.awt.Dimension(135, 22));
+        btnIngresarServicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarServicioActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnIngresarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 398, 172, 25));
 
         pack();
@@ -340,12 +346,22 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtSubtotalActionPerformed
 
     private void btnInsertarFilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarFilaActionPerformed
+        int NumeroFilas = Integer.parseInt(JOptionPane.showInputDialog("Escriba el numero de filas"));
+        int respuesta = NumeroFilas + 1;
+        JOptionPane.showInputDialog(null,respuesta);
+        
+        DefaultTableModel miTableModel = (DefaultTableModel) TablaVista.getModel();
+        
+     
+        //miTableModel.addRow(ob);
+        
+        /*
         count++;
         String numero = String.valueOf(count);
         
         DefaultTableModel miTableModel = (DefaultTableModel) TablaVista.getModel();
         Object nuevaFila[]= {numero,"","",""};
-        miTableModel.addRow(nuevaFila);
+        miTableModel.addRow(nuevaFila);*/
     }//GEN-LAST:event_btnInsertarFilaActionPerformed
 
     private void btnEliminarFilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarFilaActionPerformed
@@ -358,6 +374,13 @@ public class NewJFrame extends javax.swing.JFrame {
     private void txtClienteVistaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtClienteVistaMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_txtClienteVistaMouseClicked
+
+    private void btnIngresarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarServicioActionPerformed
+        // TODO add your handling code here:
+        String NombreServicio;
+        NombreServicio = JOptionPane.showInputDialog("Escriba el nombre del Servicio").toUpperCase();
+          
+    }//GEN-LAST:event_btnIngresarServicioActionPerformed
 
     /**
      * @param args the command line arguments
