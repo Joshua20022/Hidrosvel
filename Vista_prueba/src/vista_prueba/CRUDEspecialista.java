@@ -163,6 +163,15 @@ public class CRUDEspecialista extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(TablaEspecialista);
+        if (TablaEspecialista.getColumnModel().getColumnCount() > 0) {
+            TablaEspecialista.getColumnModel().getColumn(0).setHeaderValue("ID");
+            TablaEspecialista.getColumnModel().getColumn(1).setHeaderValue("DNI");
+            TablaEspecialista.getColumnModel().getColumn(2).setHeaderValue("Nombre");
+            TablaEspecialista.getColumnModel().getColumn(3).setHeaderValue("Apellido");
+            TablaEspecialista.getColumnModel().getColumn(4).setHeaderValue("Especialidad");
+            TablaEspecialista.getColumnModel().getColumn(5).setHeaderValue("Telefono");
+            TablaEspecialista.getColumnModel().getColumn(6).setHeaderValue("Correo");
+        }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

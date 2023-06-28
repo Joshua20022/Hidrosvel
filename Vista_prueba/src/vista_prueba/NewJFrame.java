@@ -4,9 +4,10 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class NewJFrame extends javax.swing.JFrame {
+    
     CRUDEspecialista EspecialistaForm = new CRUDEspecialista();    
     DefaultTableModel modelo = new DefaultTableModel();
-    private int count = 0;
+    
     public NewJFrame() {
      
         initComponents();
@@ -388,8 +389,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIngresarServicioActionPerformed
 
     private void btnEspecialistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEspecialistaActionPerformed
-        // TODO add your handling code here:
-        
+        // TODO add your handling code here:    
         EspecialistaForm.setVisible(true);
     }//GEN-LAST:event_btnEspecialistaActionPerformed
 
