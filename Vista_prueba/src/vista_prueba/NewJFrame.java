@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class NewJFrame extends javax.swing.JFrame {
-    
+    CRUDEspecialista EspecialistaForm = new CRUDEspecialista();    
     DefaultTableModel modelo = new DefaultTableModel();
     private int count = 0;
     public NewJFrame() {
@@ -176,6 +176,11 @@ public class NewJFrame extends javax.swing.JFrame {
         btnClientes.setText("Tabla Clientes");
 
         btnEspecialista.setText("Tabla Especialistas");
+        btnEspecialista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEspecialistaActionPerformed(evt);
+            }
+        });
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Imagen.png"))); // NOI18N
 
@@ -381,6 +386,12 @@ public class NewJFrame extends javax.swing.JFrame {
         NombreServicio = JOptionPane.showInputDialog("Escriba el nombre del Servicio").toUpperCase();
           
     }//GEN-LAST:event_btnIngresarServicioActionPerformed
+
+    private void btnEspecialistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEspecialistaActionPerformed
+        // TODO add your handling code here:
+        
+        EspecialistaForm.setVisible(true);
+    }//GEN-LAST:event_btnEspecialistaActionPerformed
 
     /**
      * @param args the command line arguments
